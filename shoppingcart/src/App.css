@@ -24,7 +24,8 @@
 
 .App-products {
   display:flex;
-  /* justify-content: space-evenly; */
+ 
+  justify-content: space-evenly;
   flex-wrap:wrap
   
 
@@ -34,11 +35,29 @@
 .App-item {
   padding: 10px;
   background-color: antiquewhite;
-  border: 5px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
   margin:20px;
   width: 300px;
-
-
-
+  box-shadow: 3px 3px 3px silver;
 }
 
+.App-images{
+  height: 250px;
+  width: 300px;
+}
+
+.App-cost{
+  display: flex;
+  margin-left: 50px;
+  
+}
+
+.App-cost>button{
+  
+  width: 80px;
+ 
+  margin: 10px;
+  margin-left: 100px;
+  padding: 10px;
+}
