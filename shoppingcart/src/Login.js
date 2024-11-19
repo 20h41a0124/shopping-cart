@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Login() {
   return (
-    <div>Login
+    <div className='App-login'>Login
 
     <p>
       <input type="text" placeholder="Enter Email"></input>
@@ -10,7 +10,7 @@ export default function Login() {
     <p>
       <input type="text" placeholder="Enter Password"></input>
     </p>
-    <button>Log In</button>
+   <p><button>Log In</button></p> 
 
     </div>
   )

@@ -9,19 +9,17 @@ import { createContext, useState } from "react";
 export const UserContext = createContext();
 
 function App() {
-  const [cart, setCart] = useState([]);
-  const cartCount = cart.reduce((total, item) => total + item.qty, 0);
+  const [cart, setCart] = useState([]); // Moved cart state to App level
 
   return (
-    <UserContext.Provider value={{ cart, setCart }}> {}
+    <UserContext.Provider value={{ cart, setCart }}> {/* Provide context here */}
       <div className="App">
         <BrowserRouter>
           <div className="App-header">
             <h1>Shopping Cart</h1>
-            <div className="links">
-             <div> <Link to="/products">Products</Link></div>
-              <div><Link to="/login">Login</Link></div>
-              <div><Link to="/cart">Cart({cartCount})</Link></div>
+            <div>
+              <Link to="/products">Products</Link>|<Link to="/login">Login</Link>|
+              <Link to="/cart">Cart</Link>
             </div>
           </div>
           <div>
